@@ -1,0 +1,10 @@
+{
+    "manifest_version" : 3,
+    "name" : "Hello, World of Extensions hoho",
+    "description" : "Dummy Extension to get hands on",
+    "version" : "0.1.2",
+    "action" : {
+        "default_popup" : "hello.html",
+        "default_icon" : "thumb.png"
+    }
+}
