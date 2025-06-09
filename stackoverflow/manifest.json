@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Stack Overflow Dark Theme (Minimal)",
+  "version": "1.0",
+  "description": "A minimal dark theme extension for Stack Overflow.",
+  "icons": {
+    "48": "icons/FFFFFF.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.stackoverflow.com/*"],
+      "css": ["styles/dark.css"]
+    }
+  ]
+}

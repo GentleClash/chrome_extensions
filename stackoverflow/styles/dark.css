@@ -1,0 +1,145 @@
+/*
+ * Minimal Dark Theme for Stack Overflow
+ * This CSS aims to invert the primary light/dark scheme
+ * without overly complex modifications.
+ */
+
+/* General background and text colors for the body and main content areas */
+body,
+html,
+#content,
+.mainbar,
+.sidebar,
+.container {
+  background-color: #2d2d2d !important; /* Dark gray background */
+  color: #e0e0e0 !important; /* Light gray text */
+}
+
+/* Specific elements like headers, footers, and code blocks */
+.s-topbar,
+.s-topbar--container,
+.s-topbar--menu-btn,
+.s-topbar--item,
+.site-footer,
+.site-footer--container,
+.site-footer--legal {
+  background-color: #1a1a1a !important; /* Even darker for top/bottom bars */
+  color: #f0f0f0 !important;
+}
+
+/* Question titles, answers, comments */
+.question-header,
+.question-hyperlink,
+.post-text,
+.comment-text,
+.answer-form {
+  color: #e0e0e0 !important;
+}
+
+/* Code blocks and preformatted text */
+pre,
+code {
+  background-color: #1e1e1e !important; /* Slightly lighter dark for code readability */
+  color: #c8c8c8 !important;
+  border-color: #555 !important;
+}
+
+/* Links and their hover states */
+a {
+  color: #88c0d0 !important; /* A calm blue for links */
+}
+
+a:hover {
+  color: #a3daeb !important; /* Lighter blue on hover */
+}
+
+/* Buttons and input fields */
+.s-btn,
+.s-btn__primary,
+.s-btn__secondary,
+.s-btn__filled,
+input[type="text"],
+input[type="search"],
+textarea {
+  background-color: #4a4a4a !important;
+  color: #e0e0e0 !important;
+  border-color: #666 !important;
+}
+
+.s-btn:hover,
+.s-btn__primary:hover,
+.s-btn__secondary:hover {
+  background-color: #5a5a5a !important;
+}
+
+/* Tags */
+.s-tag,
+.post-tag {
+  background-color: #4f4f4f !important;
+  color: #bbbbbb !important;
+  border-color: #666 !important;
+}
+
+.s-tag:hover,
+.post-tag:hover {
+  background-color: #5f5f5f !important;
+}
+
+/* Other UI elements like vote buttons, badges */
+.vote-up-off, .vote-down-off, .vote-up-on, .vote-down-on {
+    filter: invert(100%) hue-rotate(180deg) brightness(150%) !important; /* Invert and adjust brightness for icons */
+}
+
+.js-vote-count {
+  color: #e0e0e0 !important; /* Ensure vote count is visible */
+}
+
+/* Adjustments for various box shadows and borders */
+.s-card,
+.s-sidebarwidget {
+  background-color: #333 !important;
+  border-color: #444 !important;
+  box-shadow: none !important; /* Remove shadows for a flatter dark look */
+}
+
+/* Text fields and forms */
+.s-textarea, .s-input {
+  background-color: #3a3a3a !important;
+  border-color: #555 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Code highlight override - this is basic, complex syntax highlighting might need more specific overrides */
+.token { /* Base for syntax highlighting tokens */
+  color: #c8c8c8 !important;
+}
+.token.keyword, .token.selector {
+  color: #cc99cd !important; /* Purple */
+}
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
+  color: #7a7a7a !important; /* Grey */
+}
+.token.string, .token.attr-value {
+  color: #7f9f7f !important; /* Green */
+}
+.token.punctuation {
+  color: #c8c8c8 !important;
+}
+.token.operator {
+  color: #fd8b27 !important; /* Orange */
+}
+.token.boolean, .token.number {
+  color: #f08d49 !important; /* Orange-ish */
+}
+.token.function {
+  color: #c8c8c8 !important; /* White-ish */
+}
+.token.class-name, .token.tag {
+  color: #61afef !important; /* Blue */
+}
+.token.property, .token.constant {
+  color: #e6c07b !important; /* Yellow */
+}
+.token.regex, .token.important {
+  color: #e06c75 !important; /* Red */
+}
